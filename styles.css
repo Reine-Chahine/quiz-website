@@ -35,7 +35,7 @@ body {
   .tabs button {
     background: none;
     border: none;
-    color: white;
+    color: aqua;
     font-size: 1rem;
     margin: 0 1rem;
     cursor: pointer;
@@ -64,7 +64,7 @@ body {
   .auth-form button {
     padding: 0.8rem;
     font-size: 1rem;
-    background: linear-gradient(to right, #6a5af9, #7a5cf7);
+    background: linear-gradient(to right, aqua, #7a5cf7);
     border: none;
     border-radius: 8px;
     color: white;
@@ -191,12 +191,16 @@ body {
     display: block;
     margin: 12px 0;
     font-size: 20px;
-    color: white;
+    color: aqua;
     text-decoration: none;
+    font-weight: bold;
+    flex-direction: column;
+    
   }
   
   .quiz-list a:hover {
     text-decoration: underline;
+    color: black;
   }
 
 
