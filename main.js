@@ -58,4 +58,24 @@ window.onload = function () {
       alert("Invalid credentials");
     }
   };
+  document.getElementById("forgotPasswordLink").onclick = (e) => {
+    e.preventDefault();
+    
+    const email = prompt("Enter your registered email:");
+    if (!email) return;
+
+    let users = JSON.parse(localStorage.getItem("users") || "{}");
+
+    if (!users[email]) {
+      alert("Email not found");
+      return;
+    }
+
+    const newPassword = prompt("Enter your new password:");
+    if (!newPassword) return;
+
+    users[email].password = newPassword;
+    localStorage.setItem("users", JSON.stringify(users));
+    alert("Password changed successfully! Please log in.");
+  };
 };
