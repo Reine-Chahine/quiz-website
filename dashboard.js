@@ -34,6 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   
       row.innerHTML = rowHTML;
-      tbody.appendChild(row);
+    tbody.appendChild(row);
     }
   });
