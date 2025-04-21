@@ -99,3 +99,15 @@ body {
     gap: 1rem;
     margin-top: 2rem;
   }
+  .quiz-item {
+    padding: 1rem;
+    background: #1f2a4d;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .quiz-item:hover {
+    background: #2c3860;
+  }

@@ -14,11 +14,11 @@ const sampleQuizzes = [
     div.className = "quiz-item";
     div.innerText = quiz.title;
     div.onclick = () => {
-      if (quiz.title === "General Knowledge") {
-        window.location.href = "web.html";
-      } else if (quiz.title === "Science & Nature") {
+      if (quiz.title === "HTML Quiz") {
+        window.location.href = "ht.html";
+      } else if (quiz.title === "CSS Quiz") {
         window.location.href = "css.html";
-      } else if (quiz.title === "History") {
+      } else if (quiz.title === "Java Script Quiz") {
         window.location.href = "javascript.html";
       }
     };
