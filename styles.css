@@ -111,3 +111,53 @@ body {
   .quiz-item:hover {
     background: #2c3860;
   }
+  .container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #1e2a4a;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+  
+  .question-block {
+    background-color: #2f3d61;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .question-block label {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
