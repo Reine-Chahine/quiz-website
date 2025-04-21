@@ -2,9 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const quizzes = [
-    { name: "HTML quiz", file: "ht.html" },
-    { name: "CSS quiz", file: "css.html" },
-    { name: "JavaScript quiz", file: "javascript.html" }
+    { name: "HTML", file: "ht.html" },
+    { name: "CSS", file: "css.html" },
+    { name: "JavaScript", file: "javascript.html" }
   ];
 
   const quizList = document.getElementById("quizList");
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const link = document.createElement("a");
     link.href = quiz.file;
     link.textContent = quiz.name;
-    link.className = "quiz-link"; // optional class for styling
+   
     quizList.appendChild(link);
   });
 });

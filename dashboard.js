@@ -1,25 +1,39 @@
-// dashboard.js
-
 document.addEventListener("DOMContentLoaded", () => {
-    const userTableBody = document.querySelector("#userTable tbody");
+    const userTable = document.getElementById("userTable");
+    const thead = userTable.querySelector("thead tr");
+    const tbody = userTable.querySelector("tbody");
   
-    // Get users from localStorage
-    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const users = JSON.parse(localStorage.getItem("users")) || {};
   
-    if (users.length === 0) {
-      const row = document.createElement("tr");
-      row.innerHTML = <td colspan="2">No users found</td>;
-      userTableBody.appendChild(row);
-      return;
+    const quizSet = new Set();
+  
+    for (const email in users) {
+      if (email === "admin123@quiz.com") continue;
+      const user = users[email];
+      if (user.scores) {
+        Object.keys(user.scores).forEach((quiz) => quizSet.add(quiz));
+      }
     }
   
-    // Populate the table with user data
-    users.forEach((user) => {
+    const quizList = Array.from(quizSet);
+  
+ 
+    thead.innerHTML =` <th>Email</th>` + quizList.map(q => `<th>${q}</th>`).join("");
+  
+
+    for (const email in users) {
+      if (email === "admin123@quiz.com") continue;
+      const user = users[email];
+      const scores = user.scores || {};
+  
       const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${user.email}</td>
-        <td>${user.score !== undefined ? user.score : "No score yet"}</td>
-      `;
-      userTableBody.appendChild(row);
-    });
+      let rowHTML = `<td>${email}</td>`;
+  
+      quizList.forEach((quiz) => {
+        rowHTML += `<td>${scores[quiz] !== undefined ? scores[quiz] : "-"}</td>`;
+      });
+  
+      row.innerHTML = rowHTML;
+      tbody.appendChild(row);
+    }
   });
