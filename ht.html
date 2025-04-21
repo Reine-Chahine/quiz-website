@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML QUIZ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HTML QUIZ</h1>
+    <form name="quizForm" class="quiz-form">
+      <div class="question-block">
+        <h3>1.What does the &lt;a&gt; tag in HTML define?</h3>
+        <label><input type="radio" name="q1" value="correct"> A heading</label>
+        <label><input type="radio" name="q1" value="wrong"> A link</label>
+        <label><input type="radio" name="q1" value="wrong"> A list</label>
+      </div>
+
+      <div class="question-block">
+        <h3>2.Which HTML tag is used to define an unordered list?</h3>
+        <label><input type="radio" name="q2" value="correct"> &lt;ol&gt;</label>
+        <label><input type="radio" name="q2" value="wrong">  &lt;ul&gt;</label>
+        <label><input type="radio" name="q2" value="wrong">  &lt;li&gt;</label>
+      </div>
+
+      <div class="question-block">
+        <h3>3. Which attribute is used to provide alternative text for an image in HTML?</h3>
+        <label><input type="radio" name="q3" value="correct">Title</label>
+        <label><input type="radio" name="q3" value="wrong"> alt</label>
+        <label><input type="radio" name="q3" value="wrong"> src</label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div id="score" class="result" style="margin-top: 1.5rem;"></div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>
