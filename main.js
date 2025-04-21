@@ -44,6 +44,20 @@ document.getElementById("loginTab").onclick = () => {
     if (user) {
       window.location.href = "home.html";
     } else {
-      alert("Invalid credentials");
+      alert("Invalid credentials,please retry!");
+    }
+  };
+  document.getElementById("forgotPasswordLink").onclick = () => {
+    const email = prompt("Enter your registered email:");
+  
+    if (!email) return;
+  
+    const users = JSON.parse(localStorage.getItem("users") || "[]");
+    const user = users.find(u => u.email === email);
+  
+    if (user) {
+      alert("Your password is: " + user.password);
+    } else {
+      alert("Email not found.REGISTER!");
     }
   };
