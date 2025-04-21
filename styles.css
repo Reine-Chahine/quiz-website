@@ -186,4 +186,16 @@ body {
   tr:hover {
     background-color: #3b4e76;
   }
+  .quiz-list a {
+    display: block;
+    margin: 12px 0;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .quiz-list a:hover {
+    text-decoration: underline;
+  }
+
 
