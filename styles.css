@@ -77,3 +77,19 @@ body {
   .hidden {
     display: none;
   }
+  .forgot-password {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    font-size: 0.9rem;
+  }
+  
+  .forgot-password a {
+    color: #7a5cf7;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
