@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Quiz</h1>
+    <form name="quizForm" class="quiz-form">
+      <div class="question-block">
+        <h3>1. What will typeof null return in JavaScript?
+        </h3>
+        <label><input type="radio" name="q1" value="wrong"> "null"</label>
+        <label><input type="radio" name="q1" value="correct"> "object"</label>
+        <label><input type="radio" name="q1" value="wrong"> "undefined"</label>
+      </div>
+
+      <div class="question-block">
+        <h3>2.Which keyword is used to declare a variable that cannot be reassigned?</h3>
+        <label><input type="radio" name="q2" value="wrong"> var</label>
+        <label><input type="radio" name="q2" value="wrong"> let</label>
+        <label><input type="radio" name="q2" value="correct"> const</label>
+      </div>
+
+      <div class="question-block">
+        <h3>3.What will console.log(2 + '2') output?
+        </h3>
+        <label><input type="radio" name="q3" value="wrong"> 4</label>
+        <label><input type="radio" name="q3" value="correct"> 22</label>
+        <label><input type="radio" name="q3" value="wrong"> None</label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div id="score" class="result" style="margin-top: 1.5rem;"></div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>
