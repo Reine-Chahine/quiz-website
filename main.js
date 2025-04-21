@@ -1,5 +1,5 @@
 window.onload = function () {
-  // Tab Switching
+ 
   document.getElementById("loginTab").onclick = () => {
     document.getElementById("loginForm").classList.remove("hidden");
     document.getElementById("registerForm").classList.add("hidden");
@@ -29,7 +29,7 @@ window.onload = function () {
 
     users[email] = {
       password: password,
-      scores: {}  // initialize scores object
+      scores: {}  
     };
 
     localStorage.setItem("users", JSON.stringify(users));

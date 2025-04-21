@@ -2,9 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const quizzes = [
-    { name: "HTML", file: "ht.html" },
-    { name: "CSS", file: "css.html" },
-    { name: "JavaScript", file: "javascript.html" }
+    { name: "HTML Quiz", file: "ht.html" },
+    { name: "CSS Quiz", file: "css.html" },
+    { name: "JavaScript Quiz", file: "javascript.html" }
   ];
 
   const quizList = document.getElementById("quizList");
