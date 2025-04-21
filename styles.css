@@ -44,3 +44,36 @@ body {
   .tabs button.active {
     border-color: #7a5cf7;
   }
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .auth-form input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #1f2a4d;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .auth-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, #6a5af9, #7a5cf7);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    opacity: 0.9;
+  }
+  
+  .hidden {
+    display: none;
+  }
