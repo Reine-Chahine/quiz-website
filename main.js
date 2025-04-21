@@ -28,3 +28,22 @@ document.getElementById("loginTab").onclick = () => {
     alert("Registration successful! Please login.");
     document.getElementById("loginTab").click();
   };
+  document.getElementById("loginForm").onsubmit = (e) => {
+    e.preventDefault();
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+  
+    if (email === "admin123@quiz.com" && password === "admin123") {
+      window.location.href = "dashboard.html";
+      return;
+    }
+  
+    const users = JSON.parse(localStorage.getItem("users") || "[]");
+    const user = users.find(u => u.email === email && u.password === password);
+  
+    if (user) {
+      window.location.href = "home.html";
+    } else {
+      alert("Invalid credentials");
+    }
+  };
