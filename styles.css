@@ -114,7 +114,9 @@ body {
     background: #2c3860;
   }
   .container {
-    max-width: 600px;
+    width: 100%;
+
+    max-width:  600px;
     margin: 2rem auto;
     background-color: #1e2a4a;
     padding: 2rem;
@@ -203,5 +205,6 @@ body {
     text-decoration: underline;
     color: black;
   }
+  
 
 
