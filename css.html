@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS QUIZ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Quiz</h1>
+    <form name="quizForm" class="quiz-form">
+      <div class="question-block">
+        <h3>1.What does the z-index property in CSS control?</h3>
+        <label><input type="radio" name="q1" value="wrong"> he zoom level of an element
+        </label>
+        <label><input type="radio" name="q1" value="correct"> The stacking order of elements
+        </label>
+        <label><input type="radio" name="q1" value="wrong"> The opacity of an element
+        </label>
+      </div>
+
+      <div class="question-block">
+        <h3>2.Which CSS property is used to change the text color of an element?</h3>
+        <label><input type="radio" name="q2" value="wrong"> font-color</label>
+        <label><input type="radio" name="q2" value="correct"> color</label>
+        <label><input type="radio" name="q2" value="wrong"> text-style</label>
+      </div>
+
+      <div class="question-block">
+        <h3>3. What is the default position value of an HTML element in CSS?
+        </h3>
+        <label><input type="radio" name="q3" value="correct"> static</label>
+        <label><input type="radio" name="q3" value="wrong"> relative</label>
+        <label><input type="radio" name="q3" value="wrong"> absolute</label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div id="score" class="result" style="margin-top: 1.5rem;"></div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

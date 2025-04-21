@@ -16,14 +16,15 @@ body {
     border-radius: 10px;
     width: 350px;
   }
-  
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(to right, #6a5af9, #7a5cf7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, #6a5af9, #7a5cf7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
   .tabs {
     display: flex;
     justify-content: center;

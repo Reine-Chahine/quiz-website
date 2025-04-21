@@ -13,3 +13,4 @@ function submitQuiz() {
     const resultDiv = document.getElementById("score");
     resultDiv.innerHTML = `<h2>You scored ${score} out of ${total}</h2>`;
   }
+ 
