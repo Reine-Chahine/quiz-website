@@ -153,11 +153,12 @@ body {
   button {
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
-    background-color: #4caf50;
+    
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background: linear-gradient(to right, aqua, #7a5cf7);
   }
   
   .hidden {
